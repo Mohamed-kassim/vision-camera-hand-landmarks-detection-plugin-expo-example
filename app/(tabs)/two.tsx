@@ -15,6 +15,7 @@ import Animated, {
   withSpring,
 } from "react-native-reanimated";
 import { Worklets } from "react-native-worklets-core";
+import "../../components/hand-detector";
 import { detectHands, Hand } from "../../components/hand-detector";
 import { useResizePlugin } from "vision-camera-resize-plugin";
 
@@ -114,11 +115,12 @@ export default function TabTwoScreen() {
         b: resized[2],
       };
 
-      // const hands = detectHands(frame, {
-      //   autoScale: true,
-      //   windowHeight: windowHeight,
-      //   windowWidth: windowWidth,
-      // });
+      const hands = detectHands(frame, {
+        autoScale: true,
+        windowHeight: windowHeight,
+        windowWidth: windowWidth,
+      });
+      console.log("hands", hands);
       // console.log("hands", hands);
       // console.log('hands', hands);
       // const detectedHand = hands[0];

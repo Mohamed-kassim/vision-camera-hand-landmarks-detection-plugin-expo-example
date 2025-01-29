@@ -1,4 +1,5 @@
 import { VisionCameraProxy, Frame } from "react-native-vision-camera";
+console.log("hi");
 const plugin = VisionCameraProxy.initFrameProcessorPlugin("detectHands", {});
 
 export interface HandDetectorOptions extends Record<string, any> {
@@ -61,7 +62,7 @@ interface Hand {
 type Hands = Hand[];
 export function detectHands(frame: Frame, options: HandDetectorOptions): Hands {
   "worklet";
-  console.log("plugin", plugin);
+
   if (plugin == null) {
     throw new Error("Failed to load Frame Processor Plugin!");
   }
