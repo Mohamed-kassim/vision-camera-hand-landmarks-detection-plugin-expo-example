@@ -28,8 +28,8 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="myapp"/>
-        <data android:scheme="com.HandlandmarksPluginExpo"/>
-        <data android:scheme="exp+handlandmarkspluginexpo"/>
+        <data android:scheme="com.handlandmarkspluginexpo"/>
+        <data android:scheme="exp+handlandmarks"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>

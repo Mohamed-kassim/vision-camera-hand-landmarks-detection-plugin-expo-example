@@ -7,7 +7,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>HandLandmarksPluginExpo</string>
+    <string>HandLandmarks</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -28,13 +28,13 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>myapp</string>
-          <string>com.HandlandmarksPluginExpo</string>
+          <string>com.handlandmarkspluginexpo</string>
         </array>
       </dict>
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+handlandmarkspluginexpo</string>
+          <string>exp+handlandmarks</string>
         </array>
       </dict>
     </array>

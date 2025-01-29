@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "HandLandmarksPluginExpo.app"
-               BlueprintName = "HandLandmarksPluginExpo"
-               ReferencedContainer = "container:HandLandmarksPluginExpo.xcodeproj">
+               BuildableName = "HandLandmarks.app"
+               BlueprintName = "HandLandmarks"
+               ReferencedContainer = "container:HandLandmarks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "HandLandmarksPluginExpoTests.xctest"
-               BlueprintName = "HandLandmarksPluginExpoTests"
-               ReferencedContainer = "container:HandLandmarksPluginExpo.xcodeproj">
+               BuildableName = "HandLandmarksTests.xctest"
+               BlueprintName = "HandLandmarksTests"
+               ReferencedContainer = "container:HandLandmarks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HandLandmarksPluginExpo.app"
-            BlueprintName = "HandLandmarksPluginExpo"
-            ReferencedContainer = "container:HandLandmarksPluginExpo.xcodeproj">
+            BuildableName = "HandLandmarks.app"
+            BlueprintName = "HandLandmarks"
+            ReferencedContainer = "container:HandLandmarks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HandLandmarksPluginExpo.app"
-            BlueprintName = "HandLandmarksPluginExpo"
-            ReferencedContainer = "container:HandLandmarksPluginExpo.xcodeproj">
+            BuildableName = "HandLandmarks.app"
+            BlueprintName = "HandLandmarks"
+            ReferencedContainer = "container:HandLandmarks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HandLandmarksPluginExpo",
-    "slug": "HandLandmarksPluginExpo",
+    "name": "HandLandmarks",
+    "slug": "HandLandmarks",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,14 +15,14 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.HandlandmarksPluginExpo"
+      "bundleIdentifier": "com.handlandmarkspluginexpo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.HandlandmarksPluginExpo"
+      "package": "com.handlandmarkspluginexpo"
     },
     "web": {
       "bundler": "metro",

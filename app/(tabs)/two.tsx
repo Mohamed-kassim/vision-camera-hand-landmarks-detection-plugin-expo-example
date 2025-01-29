@@ -16,10 +16,17 @@ import Animated, {
 } from "react-native-reanimated";
 import { Worklets } from "react-native-worklets-core";
 import { detectHands, Hand } from "../../components/hand-detector";
+import { useResizePlugin } from "vision-camera-resize-plugin";
 
 export default function TabTwoScreen() {
   const device = useCameraDevice("back");
-  const format = useCameraFormat(device, [{ fps: 10 }]);
+  const format = useCameraFormat(device, [
+    {
+      fps: 5,
+      videoResolution: { width: 320, height: 240 },
+    },
+  ]);
+  const { resize } = useResizePlugin();
   const { hasPermission, requestPermission } = useCameraPermission();
   const { width: windowWidth, height: windowHeight } = useWindowDimensions();
   console.log("dimensions", windowWidth, windowHeight);
@@ -92,12 +99,27 @@ export default function TabTwoScreen() {
   const frameProcessor = useFrameProcessor(
     (frame) => {
       "worklet";
-      const hands = detectHands(frame, {
-        autoScale: true,
-        windowHeight: windowHeight,
-        windowWidth: windowWidth,
+      const resized = resize(frame, {
+        scale: {
+          width: 192,
+          height: 192,
+        },
+        pixelFormat: "rgb",
+        dataType: "uint8",
       });
-      console.log("hands", hands);
+
+      const firstPixel = {
+        r: resized[0],
+        g: resized[1],
+        b: resized[2],
+      };
+
+      // const hands = detectHands(frame, {
+      //   autoScale: true,
+      //   windowHeight: windowHeight,
+      //   windowWidth: windowWidth,
+      // });
+      // console.log("hands", hands);
       // console.log('hands', hands);
       // const detectedHand = hands[0];
       // if (!detectedHand) {

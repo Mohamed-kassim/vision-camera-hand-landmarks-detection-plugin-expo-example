@@ -557,16 +557,20 @@ PODS:
     - React-Core
     - React-RCTImage
   - SocketRocket (0.6.1)
-  - VisionCamera (4.3.1):
-    - VisionCamera/Core (= 4.3.1)
-    - VisionCamera/FrameProcessors (= 4.3.1)
-    - VisionCamera/React (= 4.3.1)
-  - VisionCamera/Core (4.3.1)
-  - VisionCamera/FrameProcessors (4.3.1):
+  - vision-camera-resize-plugin (3.2.0):
+    - RCT-Folly (= 2021.07.22.00)
+    - React-Core
+    - VisionCamera
+  - VisionCamera (4.0.5):
+    - VisionCamera/Core (= 4.0.5)
+    - VisionCamera/FrameProcessors (= 4.0.5)
+    - VisionCamera/React (= 4.0.5)
+  - VisionCamera/Core (4.0.5)
+  - VisionCamera/FrameProcessors (4.0.5):
     - React
     - React-callinvoker
     - react-native-worklets-core
-  - VisionCamera/React (4.3.1):
+  - VisionCamera/React (4.0.5):
     - React-Core
     - VisionCamera/FrameProcessors
   - Yoga (1.14.0)
@@ -635,6 +639,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - vision-camera-resize-plugin (from `../node_modules/vision-camera-resize-plugin`)
   - VisionCamera (from `../node_modules/react-native-vision-camera`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -767,6 +772,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  vision-camera-resize-plugin:
+    :path: "../node_modules/vision-camera-resize-plugin"
   VisionCamera:
     :path: "../node_modules/react-native-vision-camera"
   Yoga:
@@ -837,9 +844,10 @@ SPEC CHECKSUMS:
   RNReanimated: 9f7068e43b9358a46a688d94a5a3adb258139457
   RNScreens: 50ffe2fa2342eabb2d0afbe19f7c1af286bc7fb3
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  VisionCamera: 3572090cd37be0ba02e1ce428ebde7820ab2932d
+  vision-camera-resize-plugin: 017c02f790806860bc3731805df414634abe1899
+  VisionCamera: 4c1d19f1ac09f2f42f758e306fcf642536627357
   Yoga: d0003f849d2b5224c072cef6568b540d8bb15cd3
 
-PODFILE CHECKSUM: ad5c0ff1dadd4968e39df36f1bff88ea983dad8b
+PODFILE CHECKSUM: db206e1536a31aa99c44e91466253267c66c2973
 
 COCOAPODS: 1.15.2

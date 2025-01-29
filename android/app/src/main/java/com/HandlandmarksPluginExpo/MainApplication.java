@@ -1,4 +1,4 @@
-package com.HandlandmarksPluginExpo;
+package com.handlandmarkspluginexpo;
 
 import android.app.Application;
 import android.content.res.Configuration;
